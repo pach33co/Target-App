@@ -2,6 +2,17 @@
   "expo": {
     "name": "target-app",
     "slug": "target-app",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      "package": "com.pacheco.target",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6000B3"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.pacheco.target",
+      "icon": "./assets/ios-icon.png"
+    }
   }
 }

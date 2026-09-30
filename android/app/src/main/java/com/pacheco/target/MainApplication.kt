@@ -1,4 +1,4 @@
-package com.targetapp
+package com.pacheco.target
 
 import android.app.Application
 import android.content.res.Configuration

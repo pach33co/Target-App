@@ -260,12 +260,14 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.targetapp;
-				PRODUCT_NAME = targetapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pacheco.target";
+				PRODUCT_NAME = "targetapp";
 				SWIFT_OBJC_BRIDGING_HEADER = "targetapp/targetapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				CODE_SIGN_ENTITLEMENTS = targetapp/targetapp.entitlements;
 			};
 			name = Debug;
 		};
@@ -288,11 +290,13 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.targetapp;
-				PRODUCT_NAME = targetapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pacheco.target";
+				PRODUCT_NAME = "targetapp";
 				SWIFT_OBJC_BRIDGING_HEADER = "targetapp/targetapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				CODE_SIGN_ENTITLEMENTS = targetapp/targetapp.entitlements;
 			};
 			name = Release;
 		};
