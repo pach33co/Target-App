@@ -2,6 +2,7 @@
   "expo": {
     "name": "target-app",
     "slug": "target-app",
+    "scheme": "target-app",
     "version": "1.0.0",
     "android": {
       "package": "com.pacheco.target",
@@ -13,6 +14,10 @@
     "ios": {
       "bundleIdentifier": "com.pacheco.target",
       "icon": "./assets/ios-icon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ]
   }
 }
