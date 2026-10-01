@@ -21,7 +21,7 @@ export default function Layout() {
         <Stack
             screenOptions={{
                 headerShown: false,
-                statusBarStyle: "dark",
+                statusBarStyle: "auto",
                 contentStyle: {
                     backgroundColor: colors.gray[0]
                 }
