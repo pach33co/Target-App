@@ -26,4 +26,9 @@ export const typography = {
         lineHeight: 16,
         fontFamily: fontFamily.regular,
     },
+    small: {
+        fontSize: 10,
+        lineHeight: 14,
+        fontFamily: fontFamily.regular,
+    }
 };

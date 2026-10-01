@@ -20,5 +20,10 @@ export const styles = StyleSheet.create({
     total: {
         ...typography.heading,
         color: colors.gray[0]
+    },
+    summary: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between"
     }
 })
