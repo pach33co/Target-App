@@ -1,16 +1,29 @@
 import { fontFamily } from "./fontFamily";
 
 export const typography = {
+    heading: {
+        fontSize: 32,
+        lineHeight: 42,
+        fontFamily: fontFamily.medium,
+    },
     title: {
         fontSize: 18,
-        fontFamily: fontFamily.bold
+        lineHeight: 26,
+        fontFamily: fontFamily.bold,
     },
     subtitle: {
         fontSize: 16,
-        fontFamily: fontFamily.medium
+        lineHeight: 22,
+        fontFamily: fontFamily.medium,
     },
     body: {
         fontSize: 14,
-        fontFamily: fontFamily.regular
-    }
-}
+        lineHeight: 20,
+        fontFamily: fontFamily.regular,
+    },
+    label: {
+        fontSize: 12,
+        lineHeight: 16,
+        fontFamily: fontFamily.regular,
+    },
+};
