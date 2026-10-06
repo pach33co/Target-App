@@ -4,6 +4,8 @@ import { HomeHeader } from "@/components/HomeHeader";
 import { List } from "@/components/List";
 import { Target } from "@/components/Target";
 import { spacing } from "@/styles/spacing";
+import { Button } from "@/components/Button";
+import { router } from "expo-router";
 
 
 const summary = {
@@ -45,10 +47,14 @@ export default function Index() {
                 title="Metas"
                 data={targets}
                 keyExtractor={(item) => item.id}
-                renderItem={({ item }) => <Target data={item} />}
+                renderItem={({ item }) => <Target data={item} onPress={() => router.navigate(`/in-progress/${item.id}`)}/>}
                 emptyMessage="Nenhuma meta. Clique em nova meta para criar"
                 containerStyle={{ paddingHorizontal: spacing.lg}}
             />
+
+            <View style={{ padding: spacing.lg, paddingBottom: spacing.xl}}>
+                <Button title="Nova meta" onPress={() => router.navigate("/target")}/>
+            </View>
         </View>
     )
 }

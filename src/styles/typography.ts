@@ -35,5 +35,10 @@ export const typography = {
         fontSize: 10,
         lineHeight: 14,
         fontFamily: fontFamily.regular,
+    },
+    button: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fontFamily.medium,
     }
 };
