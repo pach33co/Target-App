@@ -11,6 +11,11 @@ export const typography = {
         lineHeight: 26,
         fontFamily: fontFamily.bold,
     },
+    smallTitle: {
+        fontSize: 18,
+        lineHeight: 26,
+        fontFamily: fontFamily.medium,
+    },
     subtitle: {
         fontSize: 16,
         lineHeight: 22,
