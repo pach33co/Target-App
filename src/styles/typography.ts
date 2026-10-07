@@ -34,7 +34,7 @@ export const typography = {
     label: {
         fontSize: 12,
         lineHeight: 16,
-        fontFamily: fontFamily.regular,
+        fontFamily: fontFamily.medium,
     },
     small: {
         fontSize: 10,
