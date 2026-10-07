@@ -6,6 +6,11 @@ export const typography = {
         lineHeight: 42,
         fontFamily: fontFamily.medium,
     },
+    smallHeading: {
+        fontSize: 24,
+        lineHeight: 32,
+        fontFamily: fontFamily.bold,
+    },
     title: {
         fontSize: 18,
         lineHeight: 26,
