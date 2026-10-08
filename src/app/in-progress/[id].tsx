@@ -3,6 +3,9 @@ import { View } from "react-native";
 
 import { PageHeader } from "@/components/PageHeader";
 import { Progress } from "@/components/Progress";
+import { Transaction, TTransactionProps } from "@/components/Transaction";
+import { List } from "@/components/List";
+import { TransactionTypes } from "@/utils/TransactionTypes";
 
 const details = {
     current: "R$ 580,00",
@@ -10,21 +13,43 @@ const details = {
     percentage: 25
 }
 
+const transactions = [
+    {
+        id: "1",
+        value: "R$ 50,00",
+        date: "12/04/2026",
+        type: TransactionTypes.Output
+    },
+    {
+        id: "2",
+        value: "R$ 300,00",
+        date: "12/04/2026",
+        description: "CDB de 110% no Banco XPTO ",
+        type: TransactionTypes.Input
+    }
+]
+
 export default function InProgress() {
     const params = useLocalSearchParams<{ id: string }>()
 
     return (
         <View style={{ flex: 1, padding: 24, gap: 32 }}>
             <PageHeader
-            title="Apple Watch"
-            rightButton={{
-                icon: "edit",
-                onPress: () => {}
-            }}
+                title="Apple Watch"
+                rightButton={{
+                    icon: "edit",
+                    onPress: () => { }
+                }}
             />
 
             <Progress
-            data={details}
+                data={details}
+            />
+
+            <List
+                title="Transações"
+                data={transactions}
+                renderItem={({ item }) => <Transaction data={item} onRemove={() => { }} />}
             />
         </View>
     )

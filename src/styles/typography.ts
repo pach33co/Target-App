@@ -21,6 +21,7 @@ export const typography = {
     // Body
     body: { ...sizes.base, fontFamily: fontFamily.regular },
     label: { ...sizes.xs, fontFamily: fontFamily.medium },
+    description: { ...sizes.xs, fontFamily: fontFamily.regular },
     small: { ...sizes.xxs, fontFamily: fontFamily.regular },
 
     // Others
