@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         paddingBottom: spacing.xxxl
     },
     title: {
-        ...typography.smallTitle,
+        ...typography.titleMedium,
         color: colors.gray[950],
         marginTop: spacing.lg,
         paddingBottom: spacing.md,

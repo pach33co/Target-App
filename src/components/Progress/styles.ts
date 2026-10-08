@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         alignItems: "flex-end"
     },
     value: {
-        ...typography.smallTitle,
+        ...typography.titleMedium,
         color: colors.gray[950],
         flex: 1
     },

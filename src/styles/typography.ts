@@ -1,54 +1,29 @@
 import { fontFamily } from "./fontFamily";
 
-export const typography = {
-    heading: {
-        fontSize: 32,
-        lineHeight: 42,
-        fontFamily: fontFamily.medium,
-    },
-    smallHeading: {
-        fontSize: 24,
-        lineHeight: 32,
-        fontFamily: fontFamily.bold,
-    },
-    title: {
-        fontSize: 18,
-        lineHeight: 26,
-        fontFamily: fontFamily.bold,
-    },
-    smallTitle: {
-        fontSize: 18,
-        lineHeight: 26,
-        fontFamily: fontFamily.medium,
-    },
-    subtitle: {
-        fontSize: 16,
-        lineHeight: 22,
-        fontFamily: fontFamily.medium,
-    },
-    body: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fontFamily.regular,
-    },
-    percentage: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fontFamily.bold,
-    },
-    label: {
-        fontSize: 12,
-        lineHeight: 16,
-        fontFamily: fontFamily.medium,
-    },
-    small: {
-        fontSize: 10,
-        lineHeight: 14,
-        fontFamily: fontFamily.regular,
-    },
-    button: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fontFamily.medium,
-    }
+const sizes = {
+    xl: { fontSize: 32, lineHeight: 42 },
+    lg: { fontSize: 24, lineHeight: 32 },
+    md: { fontSize: 18, lineHeight: 26 },
+    sm: { fontSize: 16, lineHeight: 22 },
+    base: { fontSize: 14, lineHeight: 20 },
+    xs: { fontSize: 12, lineHeight: 16 },
+    xxs: { fontSize: 10, lineHeight: 14 },
 };
+
+export const typography = {
+    // Title
+    heading: { ...sizes.xl, fontFamily: fontFamily.medium },
+    smallHeading: { ...sizes.lg, fontFamily: fontFamily.bold },
+    title: { ...sizes.md, fontFamily: fontFamily.bold },
+    titleMedium: { ...sizes.md, fontFamily: fontFamily.medium },
+    subtitle: { ...sizes.sm, fontFamily: fontFamily.medium },
+
+    // Body
+    body: { ...sizes.base, fontFamily: fontFamily.regular },
+    label: { ...sizes.xs, fontFamily: fontFamily.medium },
+    small: { ...sizes.xxs, fontFamily: fontFamily.regular },
+
+    // Others
+    percentage: { ...sizes.base, fontFamily: fontFamily.bold },
+    button: { ...sizes.base, fontFamily: fontFamily.medium },
+}
