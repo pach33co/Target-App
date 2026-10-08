@@ -31,6 +31,11 @@ export const typography = {
         lineHeight: 20,
         fontFamily: fontFamily.regular,
     },
+    percentage: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fontFamily.bold,
+    },
     label: {
         fontSize: 12,
         lineHeight: 16,
