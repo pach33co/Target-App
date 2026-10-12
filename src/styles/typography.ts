@@ -27,4 +27,5 @@ export const typography = {
     // Others
     percentage: { ...sizes.base, fontFamily: fontFamily.bold },
     button: { ...sizes.base, fontFamily: fontFamily.medium },
+    transactionButton: { ...sizes.base, fontFamily: fontFamily.medium }
 }

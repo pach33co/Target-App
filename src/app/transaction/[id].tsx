@@ -6,8 +6,12 @@ import { CurrencyInput } from "@/components/CurrencyInput";
 import { PageHeader } from "@/components/PageHeader";
 import { Input } from "@/components/Input";
 import { Button } from "@/components/Button";
+import { useState } from "react";
+import { TransactionTypes } from "@/utils/TransactionTypes";
+import { TransactionType } from "@/components/TransactionType";
 
 export default function Transaction() {
+    const [type, setType] = useState(TransactionTypes.Input)
     const params = useLocalSearchParams<{ id: string }>()
 
     return (
@@ -18,6 +22,8 @@ export default function Transaction() {
             />
 
             <View style={{ marginTop: 32, gap: 24 }}>
+                <TransactionType selected={type} onChange={setType} />
+
                 <CurrencyInput
                     label="Valor (R$)"
                     value={0}
@@ -29,8 +35,8 @@ export default function Transaction() {
                 />
 
                 <Button
-                title="Salvar"
-                onPress={() => {}}
+                    title="Salvar"
+                    onPress={() => { }}
                 />
             </View>
 
