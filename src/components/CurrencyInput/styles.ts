@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     },
     label: {
         ...typography.label,
-        color: colors.gray[500]
+        color: colors.gray[600]
     },
     input: {
         ...typography.subtitle,
