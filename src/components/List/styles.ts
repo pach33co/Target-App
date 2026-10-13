@@ -9,8 +9,6 @@ export const styles = StyleSheet.create({
         flex: 1
     },
     listContent: {
-        gap: spacing.md,
-        paddingTop: spacing.md,
         paddingBottom: spacing.xxxl
     },
     title: {

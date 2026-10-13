@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
         gap: spacing.xs
     },
     label: {
-        ...typography.small,
-        color: colors.purple[200]
+        ...typography.description,
+        color: colors.gray[0]
     },
     value: {
         ...typography.subtitle,

@@ -6,7 +6,7 @@ import { colors } from "@/styles/colors";
 
 export const styles = StyleSheet.create({
     container: {
-        height: 72,
+        paddingVertical: spacing.md,
         flexDirection: "row",
         alignItems: "center",
         gap: spacing.smd

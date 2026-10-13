@@ -7,7 +7,7 @@ import { colors } from "@/styles/colors";
 
 export const styles = StyleSheet.create({
     conatiner: {
-        height: 72,
+        paddingVertical: spacing.md,
         width: "100%",
         flexDirection: "row",
         alignItems: "center",
