@@ -21,6 +21,7 @@ export const styles = StyleSheet.create({
     },
     empty: {
         ...typography.body,
-        color: colors.gray[600]
+        color: colors.gray[600],
+        marginTop: spacing.lg
     }
 })
