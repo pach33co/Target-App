@@ -1,11 +1,13 @@
-import { View } from "react-native";
+import { Alert, View } from "react-native";
 
 import { HomeHeader } from "@/components/HomeHeader";
 import { List } from "@/components/List";
 import { Target } from "@/components/Target";
 import { spacing } from "@/styles/spacing";
 import { Button } from "@/components/Button";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
+import { useTargetDatabase } from "@/database/useTargetDatabase";
+import { useCallback } from "react";
 
 
 const summary = {
@@ -39,6 +41,24 @@ const targets = [
 ]
 
 export default function Index() {
+    const targetDatabase = useTargetDatabase()
+    
+    async function fetchTargets() {
+        try {
+            const response = await targetDatabase.listBySavedValue()
+            console.log(response)
+        } catch (error) {
+            Alert.alert("Erro", "Não foi possível carregar as metas")
+            console.log(error)
+        }
+    }
+    
+    useFocusEffect(
+        useCallback(() => {
+            fetchTargets()
+        },[])
+    )
+
     return (
         <View style={{ flex: 1 }}>
             <HomeHeader data={summary} />
